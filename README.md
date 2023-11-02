@@ -15,7 +15,7 @@ buildah bud -t vcftools_haploid
 To make the container publicly available, it is pushed to [dockerhub](https://hub.docker.com/r/khench/vcftools_haploid) using [skopeo](https://github.com/containers/skopeo) and [podman](https://podman.io/):
 
 ```sh
-skopeo login -u khench docker.io/
+skopeo login -u khench docker.io
 podman push localhost/vcftools_haploid docker.io/khench/vcftools_haploid:v0.1
 ```
 

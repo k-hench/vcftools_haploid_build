@@ -17,4 +17,4 @@ RUN mkdir -p /manual_install/bin && \
     cd ../bin && \
     ln -s ../vcftools_haploid/src/cpp/vcftools ./vcftools_haploid
 
-ENV PATH ${PATH}:manual_install/bin
+ENV PATH ${PATH}:/manual_install/bin
